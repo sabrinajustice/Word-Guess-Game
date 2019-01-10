@@ -81,6 +81,25 @@ $(document).ready(function() {
 
 
 
+        pauseGame = false
+
+        // Get a new word
+        wordToMatch = possibleWords[Math.floor(Math.random() * possibleWords.length)].toUpperCase()
+        console.log(wordToMatch)
+
+        // Reset word arrays
+        guessedLetters = []
+        guessingWord = []
+
+        // Reset the guessed word
+        for (var i=0, j=wordToMatch.length; i < j; i++){
+            // Put a space instead of an underscore between multi word "words"
+            if (wordToMatch[i] === " ") {
+                guessingWord.push(" ")
+            } else {
+                guessingWord.push("_")
+            }
+        }
 
 
 
@@ -95,7 +114,6 @@ $(document).ready(function() {
 
 
 
-        
 
         // Update the Display
         updateDisplay()
