@@ -1,9 +1,9 @@
 body {
-    background-image: url(../images/world.jpeg);
+    background-image: url(../images/travel.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    color: white;
+    color: rgb(42, 11, 182);
     display: flex;
 }
 .container {
